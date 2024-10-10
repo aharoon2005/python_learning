@@ -4,7 +4,7 @@ import numpy as np
 
 # Creating vectors X and Y
 x = np.linspace(-2, 2, 100)
-y = np.
+y = x
 
 fig = plt.figure(figsize = (10, 5))
 # Create the plot
