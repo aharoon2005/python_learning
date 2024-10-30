@@ -56,3 +56,19 @@ set2={1,1,2,20,3,3,31,4,20}
 print(set2)         # Will only pring the unique values from least to greatest
 set3={1,1,5,32,33,4,3,21}
 print(set3 | set2)  # "|" will compare two sets
+print(set3 & set2)  # "&" will show which values match
+print(set3 - set2)  # "-" will show which values DONT match
+print(set3 ^ set2)  # "^" will show which values are unique to their individual set
+
+dict_Aydin = {'name':'Aydin Haroon', 'weight':'170 lbs', 'favorite foods':['sushi','salmon','udon']}   #creates a dictionary with key value pairs
+print(dict_Aydin)
+print(dict_Aydin.values())      # .values will list the values attached to the key, but not the key
+print(dict_Aydin.keys())        # .keys will list the keys, but no the values attached
+print(dict_Aydin.items())       # .items will list the keys and the values in perentheses
+print(dict_Aydin['name'])
+dict_Aydin['name'] = 'Moiz Haroon'   # ['key'] will allow you to print your dictionary with a single changed value
+print(dict_Aydin)
+dict_Aydin.update({'name':'Mindy Haroon', 'weight':'170 lbs', 'favorite foods':['Bread','Almond Joy','mac and cheese'], 'role': 'mother'}) #.update will update any value or key that you change but will not allow you to delete anything
+print(dict_Aydin)
+del dict_Aydin['role']  # del will let you delete any item in the dictionary
+print(dict_Aydin)
