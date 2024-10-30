@@ -52,3 +52,11 @@ print(
     not(50==50)              # "not" will tell you the opposite of the correct outcome so this will output "False" even though 50 does equal 50
 )
 
+aydin_gender ='Aydin is a boy' 
+print('boy' in aydin_gender) # Because the word 'boy' is in my string, the output will be "True"
+
+print('girl' in aydin_gender) # Becuase the word 'girl' is NOT in my string, the output will be "False"
+
+aydin_family = ['Mindy', 'Moiz', 'Zain', 'Nani']
+print('penny' in aydin_family) # Because I did not put penny in my list, the output will be "False"
+print('Zain' in aydin_family)
