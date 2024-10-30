@@ -7,7 +7,10 @@
 
 'and'   # Returns "True" if both statement are true
 'or'    # Returns "True" if one of the statments is true
-'not'   # Reverses the result, returns false if the statement is true and vice-versa
+'not'   # Reverses the result, returns "False" if the statement is true and vice-versa
+
+'in'    # Returns "True" if a sequence with the specified value is present in the object
+'no in' # Returns "True" if a sequence with the specified value is NOT present in the object
 
 print(10==10) # This will output "True"
 print(10==50) # This will output "False"  
