@@ -4,6 +4,7 @@
 '<'     # Less than
 '>='    # Greater than or equal to
 '<='    # Less than or equal to 
+'%'     # modulo 
 
 'and'   # Returns "True" if both statement are true
 'or'    # Returns "True" if one of the statments is true
@@ -31,6 +32,8 @@ print(50>=10)  # Because 50 is greater than 10 but not equal to 10, this will st
 print(10<=50)  # Because 10 is less than 50 and not equal to 50, this will output "True"
 print(10<=10)  # Because 10 is equal to 10, this will output "True"
 print(50<=10)  # Because 50 is greater than 10 but not equal to 10, this will still output "False"
+
+print(10 % 3)  # Because 10/3 is 9, the remainder is 1, so the terminal will output "1"
 
 print(
     (50>10) or (50<10)     # if one of these statments is correct, it will output "True"
