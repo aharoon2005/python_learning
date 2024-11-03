@@ -4,5 +4,5 @@ def calculate_factorial(n):
     else:
         return n * calculate_factorial(n-1)
 
-
+print(calculate_factorial(6))
 
