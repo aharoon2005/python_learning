@@ -11,7 +11,7 @@
 'not'   # Reverses the result, returns "False" if the statement is true and vice-versa
 
 'in'    # Returns "True" if a sequence with the specified value is present in the object
-'no in' # Returns "True" if a sequence with the specified value is NOT present in the object
+'not in' # Returns "True" if a sequence with the specified value is NOT present in the object
 
 print(10==10) # This will output "True"
 print(10==50) # This will output "False"  
