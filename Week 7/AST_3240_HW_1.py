@@ -13,7 +13,7 @@ MeV = 'MeV'
 
 def Energy():
     if ert == GHz:
-       print(electromagnetic_radiation * (4.13566553853598*10**-6))
+       print(electromagnetic_radiation * (4.1356*10**-6))
     elif ert == um:
         print(((4.1357*10**-15) * (3*10**8)) / ((electromagnetic_radiation) * 10**-6))
     elif ert == nm:
@@ -43,9 +43,9 @@ def frequency():
     elif ert == nm:
         print((2.99792458*10**17) / electromagnetic_radiation)
     elif ert == keV:
-        print(electromagnetic_radiation * 2.41799050402417*10**17)
+        print(electromagnetic_radiation * 2.418*10**17)
     elif ert == MeV:
-        print(electromagnetic_radiation * 2.41799050402417*10**20)
+        print(electromagnetic_radiation * 2.418*10**20)
 
 match conversion_type:
     case "Frequency":
