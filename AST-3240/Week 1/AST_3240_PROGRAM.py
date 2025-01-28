@@ -50,9 +50,21 @@ def frequency():
 match conversion_type:
     case "Frequency":
         frequency()
+    case "FREQUENCY":
+        frequency()
+    case "frequency":
+        frequency()
     case "Wavelength":
+        wavelength()
+    case "WAVELENGTH":
+        wavelength()
+    case "wavelength":
         wavelength()                                        # Calls each function depending on which conversion type you input
     case "Energy":
+        Energy()
+    case "ENERGY":
+        Energy()
+    case "energy":
         Energy()
     case _:
         print("Invalid Conversion Type")
