@@ -25,11 +25,11 @@ input_coords = SkyCoord(ra = input_ra, dec = input_dec, unit = 'deg', frame = 'f
 input_J2000 = input_coords.transform_to(FK5(equinox='J2000.0'))
 
 # Function to determine the month when the object is highest in the sky
-def highest_in_sky_month(ra_deg):
+def highest_in_sky_month(input_ra_hours):
     # Convert RA from degrees to hours
-    ra_hours = ra_deg / 15
+    ra_hours = (input_ra_hours) / 15
     # Calculate the month (approximate)
-    month = (ra_hours / 2) + 6
+    month = (np.ceil(ra_hours)) + 6
     if month > 12:
         month -= 12
     return int(month)
@@ -40,16 +40,15 @@ print(f"Right Ascension (J2000): {input_J2000.ra.deg:.6f} degrees")
 print(f"Declination (J2000): {input_J2000.dec.deg:.6f} degrees")
 
 if input_dec < 0:
-    print('Southern Hemisphere')
+    print('Object is in the Southern Hemisphere')
 else:
-    print('Northern Hemisphere')
+    print('Object is in the Northern Hemisphere')
 
 # Determine and print the month when the object is highest in the sky
 highest_month = highest_in_sky_month(input_J2000.ra.deg)
 print(f"The astronomical object will be highest in the sky around month: {calendar.month_name[highest_month]}")
 
 print('-------------------------------------------------')
-
 
 
 
