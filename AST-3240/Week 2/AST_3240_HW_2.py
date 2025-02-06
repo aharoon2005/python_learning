@@ -46,7 +46,7 @@ else:
 
 # Determine and print the month when the object is highest in the sky
 highest_month = highest_in_sky_month(input_J2000.ra.deg)
-print(f"The astronomical object will be highest in the sky around month: {calendar.month_name[highest_month]}")
+print(f"The astronomical object will be highest in the sky around month: {highest_month}")
 
 print('-------------------------------------------------')
 
